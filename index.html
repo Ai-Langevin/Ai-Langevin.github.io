@@ -49,14 +49,14 @@
   </nav>
 
   <!-- Portfolio Section -->
-  <section class="page-section portfolio" id="portfolio" style="margin-top:15rem;">
+  <section class="page-section portfolio" id="portfolio" style="margin-top:6rem; padding-bottom: 0rem;">
     <div class="container">
       <div id="myModal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="img01">
       </div>
       <!-- Portfolio Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" style="padding-bottom: 3rem;">Portfolio</h2>
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" style="padding-bottom: 3rem;">Characters</h2>
 
       <!-- Portfolio Grid Items -->
       <div class="row">
@@ -116,6 +116,70 @@
     </div>
   </section>
 
+  <!-- Portfolio Section -->
+  <section class="page-section portfolio" id="portfolio" style="margin-top:0rem;">
+    <div class="container">
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+      </div>
+      <!-- Portfolio Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" style="padding-bottom: 3rem;">Portraits</h2>
+
+      <!-- Portfolio Grid Items -->
+      <div class="row">
+
+        <!-- Portfolio Item 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+            <div id="por1" class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+            </div>
+            <img id="porimg1" class="img-fluid" src="img/por1.jpg" alt="">
+          </div>
+        </div>
+
+        <!-- Portfolio Item 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+            <div id="por2" class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+            </div>
+            <img id="porimg2" class="img-fluid" src="img/por2.jpg" alt="">
+          </div>
+        </div>
+
+        <!-- Portfolio Item 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+            <div id="por3" class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+            </div>
+            <img id="porimg3" class="img-fluid" src="img/por3.jpg" alt="">
+          </div>
+        </div>
+
+        <!-- Portfolio Item 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+            <div id="por4" class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+            </div>
+            <img id="porimg4" class="img-fluid" src="img/por4.jpg" alt="">
+          </div>
+        </div>
+
+        <!-- Portfolio Item 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+            <div id="por5" class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+            </div>
+            <img id="porimg5" class="img-fluid" src="img/por5.jpg" alt="">
+          </div>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+  </section>
+
   <!-- Copyright Section -->
   <section class="copyright py-4 text-center text-white">
     <div class="container">
@@ -151,6 +215,31 @@
     document.getElementById("char3").onclick = function(){
       modal.style.display = "block";
       document.getElementById("img01").src = document.getElementById("charimg3").src;
+    }
+
+    document.getElementById("por1").onclick = function(){
+      modal.style.display = "block";
+      document.getElementById("img01").src = document.getElementById("porimg1").src;
+    }
+
+    document.getElementById("por2").onclick = function(){
+      modal.style.display = "block";
+      document.getElementById("img01").src = document.getElementById("porimg2").src;
+    }
+
+    document.getElementById("por3").onclick = function(){
+      modal.style.display = "block";
+      document.getElementById("img01").src = document.getElementById("porimg3").src;
+    }
+
+    document.getElementById("por4").onclick = function(){
+      modal.style.display = "block";
+      document.getElementById("img01").src = document.getElementById("porimg4").src;
+    }
+
+    document.getElementById("por5").onclick = function(){
+      modal.style.display = "block";
+      document.getElementById("img01").src = document.getElementById("porimg5").src;
     }
 
     // close  function
