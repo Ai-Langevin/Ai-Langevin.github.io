@@ -51,7 +51,10 @@
   <!-- Portfolio Section -->
   <section class="page-section portfolio" id="portfolio" style="margin-top:15rem;">
     <div class="container">
-
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+      </div>
       <!-- Portfolio Section Heading -->
       <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" style="padding-bottom: 3rem;">Portfolio</h2>
 
@@ -72,27 +75,27 @@
         <!-- Portfolio Item 2 -->
         <div class="col-md-6 col-lg-4">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+            <div id="char1" class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
             </div>
-            <img class="img-fluid" src="img/char1.jpg" alt="">
+            <img id="charimg1" class="img-fluid" src="img/char1.jpg" alt="">
           </div>
         </div>
 
         <!-- Portfolio Item 3 -->
         <div class="col-md-6 col-lg-4">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+            <div id="char2" class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
             </div>
-            <img class="img-fluid" src="img/char2.jpg" alt="">
+            <img id="charimg2" class="img-fluid" src="img/char2.jpg" alt="">
           </div>
         </div>
 
         <!-- Portfolio Item 4 -->
         <div class="col-md-6 col-lg-4">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+            <div id="char3" class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
             </div>
-            <img class="img-fluid" src="img/char3.jpg" alt="">
+            <img id="charimg3" class="img-fluid" src="img/char3.jpg" alt="">
           </div>
         </div>
 
@@ -128,8 +131,33 @@
   </div>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="js/index.js"></script>
+
   <script src="vendor/jquery/jquery.min.js"></script>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal
+    document.getElementById("char1").onclick = function(){
+      modal.style.display = "block";
+      document.getElementById("img01").src = document.getElementById("charimg1").src;
+    }
+
+    document.getElementById("char2").onclick = function(){
+      modal.style.display = "block";
+      document.getElementById("img01").src = document.getElementById("charimg2").src;
+    }
+
+    document.getElementById("char3").onclick = function(){
+      modal.style.display = "block";
+      document.getElementById("img01").src = document.getElementById("charimg3").src;
+    }
+
+    // close  function
+    document.getElementById("myModal").onclick = function() {
+      modal.style.display = "none";
+    }
+  </script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
